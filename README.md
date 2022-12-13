@@ -28,13 +28,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 </p>
 <p>
-Ok, welcome to my first tutorial! First things first we will have to create a Virtual machine using the Microsoft Azure portal. We will be using a VM which is a remote computer. We are using a VM in order to protect our physical machine just in case something breaks. Create a resource group and title it "osTicket". Afterwards create a VM with 2-4 CPUs. In this example I will be using 4 CPUs.  
+Hi there! Welcome to my ever first tutorial! First lets create a Virtual Machine (VM) within the Microsoft Azure Portal. We will be using a remote VM which is a remote computer in the cloud. We are using a VM just in case something goes wrong and our host machine is safe. Create a resource group and title it "osTicket". Afterwards create a VM with 2-4 CPUs to ensure a stable performance. In this case we will be using 4 CPU cores.  
 <img src="https://i.imgur.com/2oYZGRb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <p>
 </p>
-<p>Next simply connect to your newly created VM using RDP using the public IPv4 address. If you are a Mac user you will have to download Microsoft RDP. 
+<p>Next simply connect to the newly created VM using RDP with the public IPv4 address. If you're a MacOS user you will have to download Microsoft RDP. 
 </p>
 <img src="https://i.imgur.com/uLVKzxS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -43,15 +43,15 @@ Ok, welcome to my first tutorial! First things first we will have to create a Vi
 <p>
 </p>
 <p>
-Alright, now that you are connected to your VM you will have to enable IIS. Simply access the control panel then select uninstall a program. Off to the left select "Turn windows features on or off". A list will appear then you will enable Internet Information Services.
+Great! Now that you are connected to the VM you will firstly have to enable Internet Information Services (IIS). Press the windows key and search for the control panel then select uninstall a program. On the left hand side press "Turn windows features on or off". A list will appear then you will look for and enable Internet Information Services.
 </p>  
 <img src="https://i.imgur.com/qtEnuWu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 </p>
 <p>
-Excellent. Now that you have enabled IIS we need to install Web Platform Installer. I have provided a link here: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
-  That link will provide you with all of the material you need to download to get osTicket up and running. Simply click the link and install the Web Platform Installer
+Excellent. Now that you have enabled IIS we need to install Web Platform Installer. I have provided a link here to download it: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+  That link will provide you with all of the necessary files for you to download and get started with using osTicket. Simply click the link and install the Web Platform Installer
 </p>
 <img src="https://i.imgur.com/AxHCfQ6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
 </p>
@@ -77,7 +77,7 @@ Open IIS Manager and restart the server. Once inside IIS manager go to Sites->De
 <p>
 </p>
 <p>
-Go back into IIS manager and enable some extensions. To do this you have to go to Sites->Default->osTicket
+Go back into IIS manager and enable some extensions. To do this you have to go to Sites-->Default-->osTicket
 Then double click on PHP manager. Click on "Disable or enable an extension" Enable "php_intl.dll" & "php_opcache.dll" then refresh the osTicket webserver and obsereve the changes "Intl Extension" should now be enabled. 
 </p>
 <img src="https://i.imgur.com/APZgUTT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
